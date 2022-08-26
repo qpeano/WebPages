@@ -1,0 +1,60 @@
+* {
+  text-align: center; 
+  background-color: black ; 
+  font-family: Verdana, sans-serif; 
+  color: white;
+}
+
+input {
+  box-sizing: border-box; 
+  margin: 6px; 
+  padding: 6px; 
+  width: 70vw; 
+  background-color: white;
+  border: none; 
+  color: black; 
+}
+
+button {
+  margin: 3px; 
+  padding: 3px; 
+  background-color: black; 
+  border: 2px solid white; 
+  color: white; 
+  font-weight: bold; 
+}
+
+#clear-btn {
+  background-color: white; 
+  color: black;  
+}
+
+#save-btn:hover {
+  color: greenyellow;
+  border-color: greenyellow; 
+}
+
+#clear-btn:hover {
+  color: red; 
+  border-color: red;
+}
+
+.task-el {
+  border: 2px solid white; 
+  margin-bottom: 3px; 
+  margin-right: 19px; 
+  padding: 3px;
+  list-style-type: none; 
+}
+
+.task-el:hover {
+  border: 2px solid white; 
+  color: black;
+  background-color: white;
+}
+
+#author {
+  color: gray; 
+  font-size: 10px;
+  font-family: monospace;
+}

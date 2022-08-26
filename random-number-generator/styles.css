@@ -1,0 +1,33 @@
+* {
+  text-align: center; 
+  font-family: Verdana, monospace; 
+  color: orange;
+  background-color: black; 
+}
+
+input {
+  background-color: orange; 
+  color: black; 
+  border: 2px solid orange; 
+  padding: 2px; 
+  margin-bottom: 6px;
+}
+
+button {
+  margin-top: 6px; 
+  background-color: orange; 
+  color: black; 
+  font-weight: bold; 
+  border: 2px solid orange; 
+  padding: 3px; 
+}
+
+hr {
+  border: 1px solid orange;
+  width: 75%; 
+}
+
+#getNumber-btn:hover {
+  background-color: black; 
+  color: orange; 
+}

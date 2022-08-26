@@ -1,0 +1,84 @@
+* {
+  font-family: sans-serif; 
+}
+
+main {
+  margin-left: 190px; 
+}
+
+#navbar {
+  /* Note: code in this selector is inspired by another person's craft
+  --------------
+  From: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+  Author: W3schools, [no date] 
+  -------------
+  */
+  
+  height: 100%; 
+  width: 170px;
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 1px;
+  text-align: center; 
+  color: white; 
+  background-color: black; 
+}
+
+#navbar a {
+  color: white; 
+  text-decoration: none;
+}
+
+.code-bar {
+  background-color: gray; 
+  width: 90%; 
+  height: auto;
+  border-radius: 10px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  padding-bottom: 4px;
+  padding-top: 4px; 
+  color: white; 
+  border-style: solid; 
+  border-color: black; 
+}
+
+span, span > a {
+  font-family: monospace;
+  font-size: 17px; 
+}
+
+@media (max-width: 600px) {
+  
+  #navbar {
+    height: 170px; 
+    width: 100%;
+    position: fixed; 
+    top: 90%;
+    z-index: 1; 
+    overflow-x: hidden; 
+    text-align: center; 
+    color: white; 
+    background-color: black; 
+    font-size: 2em;
+    padding: 0px; 
+    border-style: solid; 
+    border-color: gray; 
+  }
+  #navbar header {
+    margin-top: -38px; 
+    border-style: solid; 
+    border-color: gray;
+  }
+  main {
+    margin-left: 0; 
+  }
+  
+  #end-bar {
+    width: auto; 
+    height: 70px; 
+  }
+}

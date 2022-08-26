@@ -1,0 +1,69 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2da8d8ff;
+}
+#wrapper {
+    background-color: rgb(51, 57, 68);
+    width: 90%;
+    margin: 2% auto;
+    padding: 2%;
+    color: rgb(51, 57, 68);
+    box-shadow: 4px 8px 8px 5px rgba(0,0,0,0.24);
+    border-radius: 2%;
+}
+.center-text {
+    text-align: center;
+}
+.brick {
+    font-size: 110%;
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: #d9514eff;
+}
+.nav-item, .contact-item, .link-item {
+    text-decoration: none;
+    color: #2a2b2dff;
+}
+.p-item {
+    background-color: #2da8d8ff;
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    font-size: 110%;
+    text-align: center;
+}
+.none {
+    margin-bottom: 0%;
+}
+h1 {
+    margin-bottom: -2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 300%;
+}
+h2 {
+    color: rgb(121, 0, 0);
+}
+#content hr {
+    border-color: #2a2b2dff;
+    height: 2%;
+    width: 50%;
+}
+.slab {
+    clear: both;
+}
+.contact-item {
+    margin-right: 2%;
+}
+#last-updated {
+    float: right;
+}
+#o-hr {
+    border-color: #2a2b2dff;
+    height: 2%;
+}
+.p-item:hover {
+    box-shadow: 4px 8px 8px 5px rgba(0,0,0,0.24);
+}
+a:hover {
+    color: white;
+}

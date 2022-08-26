@@ -1,0 +1,25 @@
+* {
+  text-align: center; 
+  background-color: #ff6f69; 
+  color: #ffcc5c;
+}
+
+textarea {
+  background-color: #ffcc5c; 
+  color: black; 
+  border: 3px solid #ffcc5c;
+  padding: 3px; 
+}
+
+button {
+  border: 3px solid #ffcc5c; 
+  font-weight: bold; 
+  padding: 6px; 
+  margin-top: 3px; 
+}
+
+header, main {
+  margin: 6px;
+  padding: 6px; 
+  border: 3px solid #ffcc5c; 
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java | BriefDOC </title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>
+      <h2>Java Doc</h2>
+    </header>
+    <h4><a class="nav-link" href="#Say_Hello_to_Java">Say Hello to Java</a></h4>
+    <h4><a class="nav-link" href="#Prerequisites">Prerequisites</a></h4>
+    <h4><a class="nav-link" href="#Classes_and_Objects">Classes and Objects</a></h4>
+    <h4><a class="nav-link" href="#Methods_and_Variables">Methods and Variables</a></h4>
+    <h4><a class="nav-link" href="#Primitives_vs._References">Primitives vs. References</a></h4>
+    <h4><a class="nav-link" href="#Object_Oriented_Principles">Object Oriented Principles</a></h4>
+    <h4><a class="nav-link" href="#Sources">Sources</a></h4>
+
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Say_Hello_to_Java">
+      <header>
+        <h2>Say Hello to Java</h2>
+      </header>
+      <p>Java was released in 1998 by Sun Microsystems and later sold to Oracle which own it til this day. It is purely Object Oriented, where everything you write has to be in a class. Java was the answer to Bell Lab's C++ and today it is used for enterprise applications, databases and other areas in tech.</p>
+      <p>At the time of it's release it was terribly slow, but today it is relativly fast in general. But it makes up for the weakness in speed by the JVM, which also is the reason for Java's drop in speed. The JVM makes it so that you don't need to recompile your code when shipping it to a new machine (that also has a JVM). That's where Java's famous catch phrase- <span>Write once, run anywhere</span> -comes from. </p>
+      <h3>Strength of Java</h3>
+      <ul>
+        <li>Object-oriented</li>
+        <li>You don't need to re-invent the wheel thanks to the enormus Java API </li>
+        <li>Really secure</li>
+      </ul>
+      <div class="code-bar">
+        <code>
+          javac [filename].java // how to compile source code <br><br>
+          java [filename] // how to run the compiled code <br><br>
+          java -d . [filename].java // how to compile class that's needed for another program
+        </code>
+      </div>
+    </section>
+    <section class="main-section" id="Prerequisites">
+      <header>
+        <h2>Prerequisites</h2>
+      </header>
+      <p>I hope that the reader has a base understanding of the art of programming. I recommend that you should learn something like python or JS before delving into Java because of the fact that Object Oriented Programming is harder than Procedural, and a base understanding in one language goes a long way when learing another.</p>
+      <p>Java is also really verbose, which means that it has alot of things you need to know before you can actually do something cool with it. Learning a language like python or JS would benifitial because all of them share <span>keywords</span> which means that you'll already know some basic Java syntax even before learning the language!</p>
+      <div class="code-bar">
+        <code>
+          class Class {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Good Luck");<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          }
+        </code>
+      </div>
+    </section>
+    <section class="main-section" id="Classes_and_Objects">
+      <header>
+        <h2>Classes and Objects</h2>
+      </header>
+      <p>When a program is <span>Object Oriented</span>, it is divided into diffrent parts. These parts are called Objects and together they run the program or solve the given problem. Classes can be seen as an Object's blueprint/ datatype, and every Object can be seen as an <span>instance</span> of a class. This basically means that the Class of an Object gives it the functionality needed to run the program / solve the given set of problems.</p>
+      <p> A thing to keep in mind is that all programs in Java are essentially classes, and that the agreed upon rule when making a class is that it should atleast have 1 method, if it isn't an <span><a href="https://en.wikipedia.org/wiki/Inner_class">inner class</a></span>. But only one class in a program gets to have the <span>main method</span> which is the starting point of execution.</p>
+      <div class="code-bar">
+        <code>
+          class Class {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[] args) { //main method<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scanner in = new Scanner(System.in); // instantiating an object "in" of class "Scanner"<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          }
+        </code>
+      </div>
+    </section>
+    <section class="main-section" id="Methods_and_Variables">
+      <header>
+        <h2>Methods and Variables</h2>
+      </header>
+      <p>A variable can be seen as a box that has a type which tells us what it can contain. A method can be seen as a box that does something. It can produce a <span><a href="https://en.wikipedia.org/wiki/Side_effect_(computer_science)">side effect</a></span> or a return value using other variables and values. The most known method in Java is <span>main</span>, as said in the section above.</p>
+      <p>A method is made of a method head and it's body. A method head is made of the name of the method, the return-type, and parantheses, which can contain parameters. The method body is just the code that is executed when the method is <span>invoked</span>.</p>
+      <h3>Built-in data types of Java</h3>
+      <ul>
+        <li>[integers] int, short, long, byte</li>
+        <li>[real numbers] float, double</li>
+        <li>[characters] char</li>
+        <li>[true or false] boolean</li>
+        <li>[sequence of characters, text] String</li>
+      </ul>
+      <div class="code-bar">
+        <code>
+          int num; // declaration of variable <br>
+          num = 12; // assignment of variable <br>
+          int otherNum = 13; // initiation of variable <br><br>
+          int methodNum(int num1, int num2) { // definition of method <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; result = num1 + num2; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; return result; <br>
+          } <br><br>
+          int res = methodNum(num, otherNum); // calls methodNum and stores return value in new variable "res"
+        </code>
+      </div>
+    </section>
+    <section class="main-section" id="Primitives_vs._References">
+      <header>
+        <h2>Primitives vs. References</h2>
+      </header>
+      <p>A primitive data type is one that is already present in the language, an example of this could be <span>int</span>. A reference data type is just another way of refering to an object. Primitives and reference data types works in different ways. A primitve variable is <span>immutable</span> while objects are mutatable. An examples of that is the fact that primitives are only copied for functions while reference types are passed.</p>
+      <p>References also refer to a type of variable who's sole purpose is to point to another object's <span>fields</span>. These are created by instatiating one object but only initiating the other one, which makes it the <span>reference</span>. When the instantiated object changes, the reference will also change, and vice versa. </p>
+      <div class="code-bar">
+        <code>
+          StringBuilder ob = new StringBuilder("Hello"); // instantiation of object <br>
+          StringBuilder ref = ob; // initiation of reference <br><br>
+          ref.append(", World"); // mutates object through reference <br>
+          System.out.println(ob); // new value: "Hello, World" <br>
+        </code>
+      </div>
+    </section>
+    <section class="main-section" id="Object_Oriented_Principles">
+      <header>
+        <h2>Object Oriented Principles</h2>
+      </header>
+      <p><strong>Inheritance</strong>: It is when a class inherits fields from other classes. The class that inherits is called a <span>sub class</span> and the class that is inherited from is called a <span>super class</span>. A sub class can only inherit from one class, but a super class can have an infinite amount of sub classes. If you'd want to inherit a class's features to another new class, you need to use the <span>extends</span> keyword in the class head. If a class doesn't have the extends keyword, it still inherits from the class of all classes, <span>Object</span>.</p>
+      <p><strong>Encapsulation</strong>: Also called <span>information hiding</span>, and refers to the visability of methods, classes, and variables. Visability refers to what classes can use the methods and fields of another class. Encapsulation is implemented with <span>access modifiers</span>, which are the keywords <span>private, protected and public</span>. Not having an access modifier makes it <span>default</span>, which means that it is visible throughout the whole program. It is not recommended.</p>
+      <p><strong>Polymorphism:</strong> It is when you choose to change an inherited method to do something else. It is basically method overloading, but between classes. This is also called <span>method overriding</span>.</p>
+      <p><strong>Abstraction:</strong> It is when you hide unnecessary details from users. This can be great because the user doesn't need to get how things work, and the programmer can fix stuff or remake the whole thing without the user even noticing a change, because they can't see the implementation. Java makes t even easier with something called <span>interface</span>, that can only contains method heads with instructions on what the methods do.</p>
+    </section>
+    <section class="main-section" id="Sources">
+      <header>
+        <h2>Sources</h2>
+      </header>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Object-oriented_programming">"Object-oriented programming", Wikipedia [2021-07-19]</a></li>
+        <li><a href="https://codingnomads.co/blog/what-is-object-oriented-programming-oop-concepts-in-java#:~:text=%20The%20four%20main%20OOP%20concepts%20in%20Java,properties%20and%20behaviors%20of%20a%20parent...%20More%20">"OOP Concepts in java", CodingNomads [2021-07-18]</a></li>
+        <li><a href="https://stackify.com/oops-concepts-in-java/">"What Are OOP Concepts in Java?<br>The Four Main OOP Concepts in Java, How They Work, Examples, and More" [2021-07-18]</a></li>
+      </ul>
+      <div id="end-bar"></div>
+    </section>
+
+  </main>
+</body>
+
+</html>
